@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>AnimeflvApp</title>
+
+    <link href="bower_components/paper-drawer-panel/paper-drawer-panel.html" rel="import" />
+    <link href="bower_components/paper-toolbar/paper-toolbar.html" rel="import" />
+    <link href="bower_components/iron-icons/iron-icons.html" rel="import" />
+    <link href="bower_components/paper-header-panel/paper-header-panel.html" rel="import" />
+    <link href="bower_components/paper-spinner/paper-spinner.html" rel="import" />
+    <link href="bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html" rel="import" />
+    <link href="bower_components/paper-icon-button/paper-icon-button.html" rel="import" />
+    <style is="custom-style">
+        paper-toolbar.red {
+            --paper-toolbar-background: url(images/rojo.png);
+            --paper-toolbar-title: {
+                font-style: italic;
+                font-weight: bold;
+            }
+            ;
+        }
+    </style>
+</head>
+
+<body class="win-type-body" fullbleed layout vertical>
+    <paper-drawer-panel>
+        <div main>
+            <paper-header-panel class="flex">
+                <paper-toolbar>
+                    <paper-icon-button icon="menu" id="b_drawer" paper-drawer-toggle></paper-icon-button>
+                    <span class="title">Recientes</span>
+                </paper-toolbar>
+                </<paper-header-panel>
+        </div>
+        <div drawer fixed>
+            <paper-header-panel mode="waterfall-tall" id="drawer">
+                <paper-toolbar class="red">
+                    <span class="title">Title</span>
+                </paper-toolbar>
+                </<paper-header-panel>
+        </div>
+    </paper-drawer-panel>
+</body>
+
+</html>
